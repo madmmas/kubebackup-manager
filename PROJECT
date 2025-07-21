@@ -6,6 +6,7 @@ cliVersion: 4.6.0
 domain: bizaikube.io
 layout:
 - go.kubebuilder.io/v4
+multigroup: true
 projectName: kubebackup-manager
 repo: github.com/madmmas/kubebackup-manager
 resources:
@@ -16,6 +17,15 @@ resources:
   domain: bizaikube.io
   group: backup
   kind: NamespaceBackupSchedule
+  path: github.com/madmmas/kubebackup-manager/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: bizaikube.io
+  group: backup
+  kind: BackupRun
   path: github.com/madmmas/kubebackup-manager/api/v1alpha1
   version: v1alpha1
 version: "3"

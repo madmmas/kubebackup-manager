@@ -1,0 +1,9 @@
+apiVersion: backup.bizaikube.io/v1alpha1
+kind: BackupRun
+metadata:
+  labels:
+    app.kubernetes.io/name: kubebackup-manager
+    app.kubernetes.io/managed-by: kustomize
+  name: backuprun-sample
+spec:
+  # TODO(user): Add fields here

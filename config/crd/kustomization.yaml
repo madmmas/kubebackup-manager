@@ -3,6 +3,7 @@
 # It should be run by config/default
 resources:
 - bases/backup.bizaikube.io_namespacebackupschedules.yaml
+- bases/backup.bizaikube.io_backupruns.yaml
 # +kubebuilder:scaffold:crdkustomizeresource
 
 patches:
